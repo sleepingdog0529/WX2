@@ -1,0 +1,36 @@
+﻿{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "x64-shared-debug",
+      "displayName": "x64-shared-debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/${presetName}"
+      },
+      "vendor": { "microsoft.com/VisualStudioSettings/CMake/3.0": { "hostOS": [ "Windows" ] } }
+    },
+    {
+      "name": "x64-static-debug",
+      "displayName": "x64-static-debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/${presetName}",
+      "architecture": {
+        "value": "x64",
+        "strategy": "external"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/build/${presetName}",
+        "BUILD_SHARED_LIBS": true
+      },
+      "vendor": { "microsoft.com/VisualStudioSettings/CMake/3.0": { "hostOS": [ "Windows" ] } }
+    }
+  ]
+}
