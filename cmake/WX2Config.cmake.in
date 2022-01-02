@@ -1,1 +1,1 @@
-include("@CMAKE_INSTALL_PREFIX@/@FOO_CONFIG_DIR@/wx2-exports.cmake")
+include("@CMAKE_INSTALL_PREFIX@/@FOO_CONFIG_DIR@/WX2-Exports.cmake")

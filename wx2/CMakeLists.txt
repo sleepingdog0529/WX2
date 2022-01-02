@@ -1,7 +1,7 @@
 add_library("${PROJECT_NAME}" "")
 add_library(WX2::WX2 ALIAS "${PROJECT_NAME}")
 
-set(WX2_EXPORT_FILE "wx2-exports")
+set(WX2_EXPORT_FILE "WX2-Exports")
 install(TARGETS "${PROJECT_NAME}" EXPORT "${WX2_EXPORT_FILE}")
 
 target_include_directories("${PROJECT_NAME}" PUBLIC
@@ -33,6 +33,6 @@ add_subdirectory("include")
 add_subdirectory("src")
 
 set(WX2_CONFIG_DIR "lib/cmake/${PROJECT_NAME}")
-configure_file("${WX2_SOURCE_DIR}/cmake/wx2config.cmake.in" "${WX2_BINARY_DIR}/${WX2_CONFIG_DIR}/wx2config.cmake")
-install(FILES "${WX2_BINARY_DIR}/${WX2_CONFIG_DIR}/wx2config.cmake" DESTINATION "${WX2_CONFIG_DIR}")
+configure_file("${WX2_SOURCE_DIR}/cmake/WX2Config.cmake.in" "${WX2_BINARY_DIR}/${WX2_CONFIG_DIR}/WX2Config.cmake")
+install(FILES "${WX2_BINARY_DIR}/${WX2_CONFIG_DIR}/WX2Config.cmake" DESTINATION "${WX2_CONFIG_DIR}")
 install(EXPORT "${WX2_EXPORT_FILE}" DESTINATION "${WX2_CONFIG_DIR}" NAMESPACE "WX2::")
