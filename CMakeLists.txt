@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION "3.0.0")
 
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED On)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 #Set target ouput directory
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
@@ -33,6 +37,5 @@ if(NOT CMAKE_CONFIGURATION_TYPES)
     endif()
 endif()
 
-add_subdirectory("wx2")
-
+add_subdirectory("WX2")
 add_subdirectory("examples")

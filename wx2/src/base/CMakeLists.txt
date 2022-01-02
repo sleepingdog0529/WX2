@@ -1,6 +1,5 @@
 set(FILES 
-	"${CMAKE_CURRENT_SOURCE_DIR}/hello.cpp"
-	"${CMAKE_CURRENT_SOURCE_DIR}/string.cpp"
+	"${CMAKE_CURRENT_SOURCE_DIR}/unicode_conversion.cpp"
 )
 set(SUBDIRECTORIES "")
 set(RELATIVE_PATH "src/wx2/base")
